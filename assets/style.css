@@ -1,0 +1,127 @@
+:root {
+    --background: #f9f7f4;
+    --foreground: #1a1a1a;
+    --muted: #e8e4df;
+    --muted-foreground: #6b7280;
+    --border: #d8d4cf;
+    --ring: #7c9e8a;
+    --accent: #e8e4df;
+    --accent-foreground: #1a1a1a;
+    --card: #e8e4df;
+    --card-foreground: #1a1a1a;
+    --popover: #f9f7f4;
+    --popover-foreground: #1a1a1a;
+    --primary: #7c9e8a;
+    --primary-foreground: #f9f7f4;
+    --primary-dark: #4a7c5f;
+    --secondary: #e8e4df;
+    --secondary-foreground: #1a1a1a;
+    --destructive: oklch(57.7% .245 27.325);
+    --input: #d8d4cf;
+    --radius: .75rem;
+    --text-primary: #1a1a1a;
+    --text-secondary: #6b7280;
+    --surface: #e8e4df;
+    --accent-green: #7c9e8a;
+    --accent-green-dark: #4a7c5f;
+
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --default-font-family: "DM Sans", sans-serif;
+    --default-mono-font-family: "DM Mono", monospace;
+    --font-heading: "Lora", serif;
+    --color-red-500: oklch(63.7% .237 25.331);
+    --color-white: #fff;
+    --spacing: .25rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-5xl: 64rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
+    --text-sm: .875rem;
+    --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --tracking-tight: -.025em;
+    --radius-sm: calc(var(--radius) * .5);
+    --radius-md: calc(var(--radius) * .667);
+    --radius-2xl: 1rem;
+}
+
+/* Use a more-intuitive box-sizing model */
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+}
+
+/* Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* Increase line-height */
+  line-height: 1.5;
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
