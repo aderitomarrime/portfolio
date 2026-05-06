@@ -120,6 +120,8 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+  font-family: var(--font-heading);
+  color: var(--text-primary);
 }
 
 /*
@@ -165,4 +167,101 @@ header nav a {
 
 header nav a:hover {
     color: var(--primary);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: var(--container-3xl);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: calc(var(--spacing) *24) 0;
+  gap: 30px;
+}
+
+main .image {
+
+}
+
+main .image img {
+  width: 14rem;
+  border-radius: 50%;
+}
+
+main .about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .about-me .circle {
+  display: flex;
+  gap: 4px;
+  background-color: var(--accent);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0 calc(var(--spacing) *2);
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+main .about-me .circle svg {
+  height: 10px;
+  width: 10px;
+  border: none;
+  fill: var(--accent-green-dark);
+  background-color: var(--accent-green-dark);
+  border-radius: 50%;
+}
+
+main .about-me .main-text .introduction {
+  display: flex;
+  align-items: center;
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl--line-height);
+  letter-spacing: var(--tracking-tight);
+  gap: 8px;
+}
+
+main .about-me .main-text .introduction h2 {
+  color: var(--muted-foreground);
+  font-size: inherit;
+  line-height: inherit;
+} 
+
+main .about-me .main-text .introduction h1 {
+  color: var(--accent-green);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+main .about-me .main-text > h2 {
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl--line-height);
+}
+
+main .about-me .main-more-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: var(--text-lg);
+}
+
+main .about-me .main-more-info .pro-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+main .about-me .main-more-info .pro-links a {
+  display: flex;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--text-primary);
+  gap: 2px;
+}  
+
+main .about-me .main-more-info .pro-links a:hover {
+  color: var(--accent-green-dark);
 }
