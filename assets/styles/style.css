@@ -176,7 +176,7 @@ main {
   max-width: 100%;
   margin: 0 auto;
   padding: calc(var(--spacing) *24) 0;
-  gap: 30px;
+  gap: 40px;
 }
 
 main .image img {
