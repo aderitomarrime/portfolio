@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    padding-block: calc(var(--spacing) * 3);
+    padding: calc(var(--spacing) * 3) var(--text-lg);
     display: flex;
     justify-content: center;
     border-bottom: 1px solid var(--border);
@@ -177,7 +177,7 @@ main {
   width: var(--container-3xl);
   max-width: 100%;
   margin: 0 auto;
-  padding: calc(var(--spacing) *24) 0;
+  padding: calc(var(--spacing) *24) var(--text-lg);
   gap: 40px;
 }
 
@@ -268,7 +268,7 @@ main .about-me .main-more-info .pro-links a:hover {
  width: var(--container-3xl);
  max-width: 100%;
  margin: 0 auto;
- padding-bottom: calc(var(--spacing) * 24);
+ padding: 0 var(--text-lg) calc(var(--spacing) * 24) var(--text-lg);
 }
 
 .skills .skills-intro h1 {
@@ -280,10 +280,6 @@ main .about-me .main-more-info .pro-links a:hover {
   color: var(--muted-foreground);
   font-size: var(--text-lg);
   line-height: var(--text-lg--line-height);
-}
-
-.skills .stack {
-
 }
 
 .skills .stack svg {
