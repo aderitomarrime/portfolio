@@ -122,6 +122,8 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
   font-family: var(--font-heading);
   color: var(--text-primary);
+  font-weight: 500;
+  letter-spacing: var(--tracking-tight);
 }
 
 /*
@@ -261,3 +263,74 @@ main .about-me .main-more-info .pro-links a {
 main .about-me .main-more-info .pro-links a:hover {
   color: var(--accent-green-dark);
 }
+
+.skills {
+ width: var(--container-3xl);
+ max-width: 100%;
+ margin: 0 auto;
+ padding-bottom: calc(var(--spacing) * 24);
+}
+
+.skills .skills-intro h1 {
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl--line-height);
+}
+
+.skills .skills-intro p {
+  color: var(--muted-foreground);
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+}
+
+.skills .stack {
+
+}
+
+.skills .stack svg {
+  height: 24px;
+  width: 24px;
+}
+
+.skills .stack > div > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 8px;
+}
+
+.skills .stack > div > div > div {
+  font-family: var(--default-mono-font-family);
+  font-size: var(--text-lg);
+  display: flex;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills .stack > div > div > div > span {
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+
+.skills .stack > div > div > div span {
+  display: flex;
+  align-items: center;
+}
+
+.skills .stack > div > div > div > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.skills .stack > div > div > div > div span {
+  font-size: var(--text-sm);
+}
+
+.skills > div > div h1{
+  font-size:calc(var(--text-2xl) - 0.3rem);
+  line-height: var(--text-2xl--line-height);
+  padding: calc(var(--spacing) *4) 0;
+}
+
