@@ -349,13 +349,19 @@ main .about-me .main-more-info .pro-links a:hover {
   line-height: var(--text-3xl--line-height);
 }
 
+.work-experience p {
+  color: var(--muted-foreground);
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+}
+
 .work-experience > div {
   display: grid;
   grid-template-columns: 20% 80%;
   gap: var(--text-base);
 }
 
-.work-experience > div h1 {
+.work-experience > div  h1 {
   font-size: calc(var(--text-2xl) - 0.3rem);
   line-height: 1.75rem;
 }
