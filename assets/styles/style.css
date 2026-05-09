@@ -325,7 +325,8 @@ main .about-me .main-more-info .pro-links a:hover {
 
 .skills .stack > div > div > div > div span {
   font-size: var(--text-sm);
-  color: var(--muted-foreground);
+  color: var(--text-primary);
+  /* color: var(--muted-foreground); */
 }
 
 .skills > div > div h1{
