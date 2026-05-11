@@ -383,3 +383,162 @@ main .about-me .main-more-info .pro-links a:hover {
   padding-bottom: calc(var(--text-sm) - 0.3rem);
 }
 
+.projects {
+  width: var(--container-3xl);
+  max-width: 100%;
+  padding: 0 var(--text-base) calc(var(--spacing) * 24) var(--text-base);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-base);
+}
+
+.projects .section-header h1 {
+  font-size: calc(var(--text-3xl) - 0.3rem);
+  line-height: var(--text-3xl--line-height);
+}
+.projects .section-header p {
+  color: var(--muted-foreground);
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+}
+
+.projects .showcase .project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--text-base);
+}
+
+.projects .showcase svg {
+  width: 24px;
+  height: 24px;
+}
+
+.projects .showcase .first-project, 
+.projects .showcase .second-project {
+  padding: calc(var(--spacing) * 3);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+
+  transition: 250ms ease-in-out;
+}
+
+.projects .showcase .first-project:hover, 
+.projects .showcase .second-project:hover,
+.projects .showcase .first-project:hover img,
+.projects .showcase .second-project:hover img {
+  box-shadow: 2px 2px 4px var(--border);
+}
+
+
+.projects .showcase > div > div > div h1 {
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+}
+
+.projects .showcase > div > div > div h2 {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: var(--accent-green-dark);
+}
+
+.projects .showcase .project-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects .showcase .project-header .project-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.projects .showcase .project-header .project-links svg {
+  opacity: 0.6;
+  transition: 250ms ease-in;
+}
+
+.projects .showcase .project-header .project-links svg:hover {
+  opacity: 1;
+}
+
+.projects .showcase .project-img img {
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  transition: 250ms ease-in-out;
+}
+
+.projects .showcase .details p {
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
+.projects .showcase .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing) * 1.5);
+}
+
+.projects .showcase .technologies > div {
+  font-family: var(--default-mono-font-family);
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * .667);
+  padding-block: calc(var(--spacing) *1);
+  padding-inline: calc(var(--spacing) *2);
+  gap: 6px;
+}
+
+.projects .showcase .technologies > div svg {
+  width: 18px;
+  height: 18px;
+}
+
+.projects .showcase .technologies > div span {
+  font-size: var(--text-xs);
+  line-height: var(--text-xs--line-height);
+  color: var(--text-primary);
+  display: flex;
+}
+
+.see-more p {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.see-more a {
+  color: inherit;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+  display: inline-flex;
+  gap: 2px;
+}
+
+.see-more a:hover{
+  color: var(--text-primary);
+}
+
+.see-more svg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  opacity: 0.6;
+  transition: 200ms ease-in-out;
+}
+
+.see-more a:hover svg {
+  opacity: 1;
+}
+ 
+
