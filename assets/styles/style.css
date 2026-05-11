@@ -523,6 +523,7 @@ main .about-me .main-more-info .pro-links a:hover {
   transition: 300ms ease-in-out;
   display: inline-flex;
   gap: 2px;
+  text-decoration: underline;
 }
 
 .see-more a:hover{
