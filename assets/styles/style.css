@@ -599,3 +599,16 @@ main .about-me .main-more-info .pro-links a:hover {
   opacity: 1;
 }
 
+footer {
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--spacing) *6) var(--text-base);
+}
+
+footer p {
+  color: var(--muted-foreground);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+}
+
