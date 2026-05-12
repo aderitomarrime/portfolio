@@ -138,6 +138,11 @@ header {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  background-color: color-mix(in oklab, var(--background) 80%, transparent);
+  z-index: 1;
 }
 
 
