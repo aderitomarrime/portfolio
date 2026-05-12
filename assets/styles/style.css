@@ -542,4 +542,60 @@ main .about-me .main-more-info .pro-links a:hover {
   opacity: 1;
 }
  
+.contact {
+  width: var(--container-3xl);
+  max-width: 100%;
+  padding: 0 var(--text-base) calc(var(--spacing) * 24) var(--text-base);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-base);
+}
+
+.contact .contact-header h1 {
+  font-size: calc(var(--text-3xl) - 0.3rem);
+  line-height: var(--text-3xl--line-height);
+}
+.contact .contact-header p {
+  color: var(--muted-foreground);
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
+}
+
+.contact svg{
+  width: 20px;
+  height: 20px;
+  fill: var(--text-primary);
+  opacity: 0.6;
+  transition: 200ms ease-in-out;
+}
+
+.contact .contact-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+}
+
+.contact .contact-links a{
+  text-decoration: none;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  padding-inline: calc(var(--spacing) *1);
+  padding-block: calc(var(--spacing) *2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  transition: 200ms ease-in-out;
+}
+
+.contact .contact-links a:hover{
+  border-color: var(--text-primary);
+}
+
+.contact .contact-links a:hover svg {
+  opacity: 1;
+}
 
