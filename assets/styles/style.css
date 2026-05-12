@@ -134,41 +134,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    padding: calc(var(--spacing) * 3) var(--text-base);
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid var(--border);
+  padding: calc(var(--spacing) * 3) var(--text-base);
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
 }
 
 
 header a {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
-    letter-spacing: var(--tracking-tight);
-    line-height: var(--text-lg--line-height);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--text-lg--line-height);
 }
 
 header .sub-header {
-    width: var(--container-3xl);
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: var(--container-3xl);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: calc(var(--spacing) * 4);
+  list-style: none;
+  display: flex;
+  gap: calc(var(--spacing) * 4);
 }
 
 header nav a {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 header nav a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 main {
