@@ -225,11 +225,11 @@ header nav button svg:last-child {
 }
 
 .dark header nav button svg:first-child {
-  display: block;
+  display: none;
 }
 
 .dark header nav button svg:last-child {
-  display: none;
+  display: block;
 }
 
 header nav a {
