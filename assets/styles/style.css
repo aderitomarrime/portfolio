@@ -88,6 +88,33 @@ html {
   }
 }
 
+.dark {
+    --background: #0f1117;
+    --foreground: #e5e6eb;
+    --muted: #1c1f2a;         
+    --muted-foreground: #b4b8c5;         
+    --border: #2e3240;                   
+    --ring: #6ee7b7;
+    --accent: #1c1f2a;
+    --accent-foreground: #e5e6eb;
+    --card: #151821;
+    --card-foreground: #e5e6eb;
+    --popover: #151821;
+    --popover-foreground: #e5e6eb;
+    --primary: #6ee7b7;
+    --primary-foreground: #0a0e14;
+    --primary-dark: #34d399;
+    --secondary: #1c1f2a;
+    --secondary-foreground: #e5e6eb;
+    --input: #2e3240;
+    --text-primary: #e5e6eb;
+    --text-secondary: #b4b8c5;        
+    --surface: #151821;
+    --accent-green: #6ee7b7;
+    --accent-green-dark: #34d399;
+    --color-white: #e5e6eb;
+}
+
 body {
   /* Increase line-height */
   line-height: 1.5;
@@ -160,12 +187,49 @@ header .sub-header {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
   gap: calc(var(--spacing) * 4);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav button {
+  height: 34px;
+  width: 34px;
+  padding: 4px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: var(--text-4xl);
+  cursor: pointer;
+}
+
+header nav button svg{
+  fill: var(--text-primary);
+  opacity: 0.7;
+}
+
+header nav button svg:last-child {
+  display: none;
+}
+
+.dark header nav button svg:first-child {
+  display: block;
+}
+
+.dark header nav button svg:last-child {
+  display: none;
 }
 
 header nav a {
@@ -198,7 +262,6 @@ main .about-me {
 }
 
 main .about-me .circle {
-  display: flex;
   gap: 4px;
   background-color: var(--accent);
   width: fit-content;
@@ -207,6 +270,7 @@ main .about-me .circle {
   padding: 0 calc(var(--spacing) *2);
   border-radius: 9999px;
   margin-bottom: 8px;
+  color: var(--text-primary);
 }
 
 main .about-me .circle svg {
@@ -251,6 +315,16 @@ main .about-me .main-more-info {
   font-size: var(--text-lg);
 }
 
+main .about-me .main-more-info svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--text-primary);
+}
+
+main .about-me .main-more-info .location p {
+  color: var(--text-primary);
+}
+
 main .about-me .main-more-info .pro-links {
   display: flex;
   align-items: center;
@@ -288,8 +362,9 @@ main .about-me .main-more-info .pro-links a:hover {
 }
 
 .skills .stack svg {
-  height: 24px;
   width: 24px;
+  height: 24px;
+  fill: var(--text-primary);
 }
 
 .skills .stack > div > div {
@@ -398,6 +473,12 @@ main .about-me .main-more-info .pro-links a:hover {
   gap: var(--text-base);
 }
 
+.projects svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-primary);
+}
+
 .projects .section-header h1 {
   font-size: calc(var(--text-3xl) - 0.3rem);
   line-height: var(--text-3xl--line-height);
@@ -412,11 +493,6 @@ main .about-me .main-more-info .pro-links a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--text-base);
-}
-
-.projects .showcase svg {
-  width: 24px;
-  height: 24px;
 }
 
 .projects .showcase .first-project, 
@@ -460,12 +536,17 @@ main .about-me .main-more-info .pro-links a:hover {
 .projects .showcase .project-header .project-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 .projects .showcase .project-header .project-links svg {
   opacity: 0.6;
   transition: 250ms ease-in;
+}
+
+.projects .showcase .project-header .project-links a:last-of-type svg {
+  position: relative;
+  top: -1px;
 }
 
 .projects .showcase .project-header .project-links svg:hover {
