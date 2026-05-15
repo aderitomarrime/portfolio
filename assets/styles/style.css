@@ -190,6 +190,15 @@ header .sub-header {
   align-items: center;
 }
 
+header .sub-header .menu {
+  display: none;
+  fill: var(--text-primary);
+}
+
+header .sub-header .nav-mobile {
+  display: none;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -438,7 +447,7 @@ main .about-me .main-more-info .pro-links a:hover {
 
 .work-experience > div {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% calc(80% - var(--text-base));
   gap: var(--text-base);
 }
 
@@ -697,4 +706,99 @@ footer p {
   font-size: var(--text-base);
   line-height: var(--text-base--line-height);
 }
+
+
+@media (max-width: 784px) {
+
+  .sub-header .hide-on-mobile {
+    display: none;
+  }
+
+  header .sub-header .menu {
+    display: block;
+  }
+
+  header .sub-header .nav-mobile {
+    background-color: var(--background);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    gap: calc(var(--spacing) * 4);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul a {
+    font-size: var(--text-3xl);
+    padding: var(--text-base);
+  }
+
+  header nav button {
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  header nav button svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  header .sub-header .nav-mobile .button-close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    /* opacity: 0.7; */
+  }
+
+   header .sub-header .nav-mobile .button-close .close {
+      fill: var(--text-primary);
+      display: block;
+   }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .about-me {
+    align-items: center;
+  }
+
+  main .about-me .main-text .introduction {
+    justify-content: center;
+  }
+
+  main .about-me .main-text > h2 {
+    text-align: center;
+  }
+
+  main .about-me .main-more-info {
+    gap: 20px;
+  }
+}
+
+@media (max-width:640px) {
+
+}
+
+@media (max-width:500px) {
+
+}
+
+@media (max-width:400px) {
+
+}
+
+
 
