@@ -21,9 +21,9 @@ function toggleMode() {
 }
 
 function showNav() {
-    navMobile.setAttribute("style", "display: flex")
+    navMobile.setAttribute("style", "left: 0")
 }
 
 function closeNav() {
-    navMobile.setAttribute("style", "display: none")
+    navMobile.setAttribute("style", "left: -100%")
 }
