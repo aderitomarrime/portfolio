@@ -632,6 +632,7 @@ main .about-me .main-more-info .pro-links a:hover {
   gap: 2px;
   align-items: center;
   text-decoration: underline;
+  color: var(--muted-foreground);
 }
 
 .see-more a:hover{
@@ -839,12 +840,12 @@ footer p {
     height: 18px;
   }
 
-.skills .stack svg,
-.see-more svg
- {
-  width: 20px;
-  height: 20px;
-}
+  .skills .stack svg,
+  .see-more svg
+  {
+    width: 20px;
+    height: 20px;
+  }
 
   .work-experience > div {
     grid-template-columns: 1fr;
@@ -875,7 +876,8 @@ footer p {
     line-height: var(--text-2xl--line-height);
   }
 
-  .skills > div > div h1 {
+  .skills > div > div h1,
+  .work-experience > div h1 {
     font-size: 18px;
   }
 
