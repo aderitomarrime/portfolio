@@ -407,6 +407,12 @@ main .about-me .main-more-info .pro-links a:hover {
   align-items: center;
   color: var(--text-primary);
   opacity: 0.7;
+  gap: 2px;
+}
+
+.skills .stack > div > div > div span svg {
+  width: 6px;
+  height: 6px;
 }
 
 .skills .stack > div > div > div > div {
@@ -470,6 +476,10 @@ main .about-me .main-more-info .pro-links a:hover {
   color: var(--accent-green);
   font-size: var(--text-sm);
 }
+
+.work-experience > div h2 .data-mobile {
+  display: none;
+ } 
 
 .work-experience > div > div > div:first-child {
   padding-bottom: calc(var(--text-sm) - 0.3rem);
@@ -730,8 +740,16 @@ footer p {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100dvh;
+    gap: calc(var(--spacing) * 28);
+    padding: calc(var(--spacing) * 3) var(--text-base);
+  }
+
+  header .sub-header .nav-mobile .bottom-elements {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: calc(var(--spacing) * 4);
   }
 
@@ -741,27 +759,25 @@ footer p {
   }
 
   header nav ul a {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
     padding: var(--text-base);
   }
 
   header nav button {
     margin-left: 0;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px;
   }
 
   header nav button svg {
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
   }
 
   header .sub-header .nav-mobile .button-close {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 5%;
-    right: 10%;
+    width: 36px;
+    height: 36px;
+    align-self: flex-end;
   }
 
    header .sub-header .nav-mobile .button-close .close {
@@ -789,14 +805,114 @@ footer p {
   main .about-me .main-more-info {
     gap: 20px;
   }
+
 }
 
 @media (max-width:640px) {
 
+  main .about-me .main-text .introduction,
+  main .about-me .main-text > h2 {
+    font-size: var(--text-2xl);
+    line-height: var(--text-2xl--line-height);
+  }
+  
+  main .about-me .main-text .introduction {
+    flex-wrap: wrap;
+  }
+
+  main .about-me .main-more-info  {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  main .about-me .main-more-info p,
+  main .about-me .main-more-info .pro-links a {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    display: flex;
+    align-items: center;
+  }
+
+  main .about-me .main-more-info svg {
+    width: 18px;
+    height: 18px;
+  }
+
+.skills .stack svg,
+.see-more svg
+ {
+  width: 20px;
+  height: 20px;
+}
+
+  .work-experience > div {
+    grid-template-columns: 1fr;
+  }
+
+  .work-experience > div .data p {
+    display: none;
+  }
+
+ .work-experience > div h2 .data-mobile {
+  display: inline-block;
+ }
+
+  main {
+    padding: calc(var(--spacing) * 21) var(--text-base);
+  }
+
+  main .image img  {
+    width: 172px;
+    height: 172px;
+  }
+
+  .skills .skills-intro h1,
+  .work-experience h1,
+  .projects .section-header h1,
+  .contact .contact-header h1 {
+    font-size: 22px;
+    line-height: var(--text-2xl--line-height);
+  }
+
+  .skills > div > div h1 {
+    font-size: 18px;
+  }
+
+  .skills .stack > div > div > div {
+    font-size: var(--text-lg);
+    line-height: var(--text-lg--line-height);
+  }
+
+  .skills .skills-intro p,
+  .work-experience p,
+  .projects .section-header p,
+  .contact .contact-header p,
+  .see-more p  {
+    font-size: 17px;
+  }
+
+   .skills .stack > div > div {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));;
+  }
+
+  .contact .contact-links {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+
+  .contact .contact-links a span {
+    font-size: var(--text-sm);
+    list-style: var(--text-sm--line-height);
+  }
 }
 
 @media (max-width:500px) {
-
+    footer p {
+    color: var(--muted-foreground);
+    font-size: var(--text-sm);
+    line-height: var(--text-sm);
+    text-align: center;
+  }
 }
 
 @media (max-width:400px) {
