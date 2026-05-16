@@ -917,6 +917,7 @@ footer p {
 }
 
 @media (max-width:384px) {
+
   main .about-me .main-text .introduction,
   main .about-me .main-text > h2 {
     font-size: clamp(16px, var(--text-base) + 1.92vw, var(--text-2xl));
@@ -925,6 +926,20 @@ footer p {
 
   .projects .showcase .project {
     grid-template-columns:  1fr;
+  }
+
+  header a,
+  main .about-me .main-text .introduction h1,
+  main .about-me .main-more-info .location p {
+    text-align: center;
+  }
+  
+}
+
+@media (max-width:292px) {
+ .projects .showcase .project-header .project-links {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
