@@ -764,20 +764,19 @@ footer p {
     padding: var(--text-base);
   }
 
-  header nav button {
+  header nav button,
+  header .sub-header .nav-mobile .button-close {
     margin-left: 0;
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
   }
 
   header nav button svg {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
 
   header .sub-header .nav-mobile .button-close {
-    width: 36px;
-    height: 36px;
     align-self: flex-end;
   }
 
@@ -917,8 +916,16 @@ footer p {
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:384px) {
+  main .about-me .main-text .introduction,
+  main .about-me .main-text > h2 {
+    font-size: clamp(16px, var(--text-base) + 1.92vw, var(--text-2xl));
+    line-height: var(--text-2xl--line-height);
+  }
 
+  .projects .showcase .project {
+    grid-template-columns:  1fr;
+  }
 }
 
 
