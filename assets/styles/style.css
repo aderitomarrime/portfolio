@@ -736,6 +736,7 @@ footer p {
     width: 36px;
     height: 36px;
     padding: 6px;
+    cursor: pointer;
   }
 
   header .sub-header .nav-mobile {
