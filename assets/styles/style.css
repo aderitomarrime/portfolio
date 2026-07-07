@@ -397,6 +397,7 @@ main .about-me .main-more-info .pro-links a:hover {
   justify-content: space-between;
   align-items: center;
   transition: 250ms ease-in-out;
+  cursor: pointer;
 }
 
 .skills .stack > div > div > div:hover {
@@ -684,7 +685,7 @@ main .about-me .main-more-info .pro-links a:hover {
 
 .contact .contact-links {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
   gap: 8px;
 }
 
