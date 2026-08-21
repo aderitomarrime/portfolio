@@ -20,7 +20,7 @@ buttonClose.addEventListener("click", closeNavByCloseButton)
 navLinksMobile.forEach(closeNavByLinks);
 
 function toggleMode() {
-    body.classList.toggle("dark");
+    body.classList.toggle("light");
 }
 
 function showNav() {
