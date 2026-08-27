@@ -32,6 +32,7 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --tracking-tight: -.025em;
+    --radius: .75rem;
     --radius-sm: calc(var(--radius) * .5);
     --radius-md: calc(var(--radius) * .667);
     --radius-2xl: 1rem;
