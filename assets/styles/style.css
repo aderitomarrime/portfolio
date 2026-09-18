@@ -37,31 +37,31 @@
   --radius-md: calc(var(--radius) * .667);
   --radius-2xl: 1rem;
 
---background: #f9f7f4;
---foreground: #1a1a1a;
---muted: #e8e4df;
---muted-foreground: #6b7280;
---border: #d8d4cf;
---ring: #7c9e8a;
---accent: #e8e4df;
---accent-foreground: #1a1a1a;
---card: #e8e4df;
---card-foreground: #1a1a1a;
---popover: #f9f7f4;
---popover-foreground: #1a1a1a;
---primary: #7c9e8a;
---primary-foreground: #f9f7f4;
---primary-dark: #4a7c5f;
---secondary: #e8e4df;
---secondary-foreground: #1a1a1a;
---destructive: oklch(57.7% .245 27.325);
---input: #d8d4cf;
---radius: .75rem;
---text-primary: #1a1a1a;
---text-secondary: #6b7280;
---surface: #e8e4df;
---accent-green: #7c9e8a;
---accent-green-dark: #4a7c5f;
+  --background: #f9f7f4;
+  --foreground: #1a1a1a;
+  --muted: #e8e4df;
+  --muted-foreground: #6b7280;
+  --border: #d8d4cf;
+  --ring: #7c9e8a;
+  --accent: #e8e4df;
+  --accent-foreground: #1a1a1a;
+  --card: #e8e4df;
+  --card-foreground: #1a1a1a;
+  --popover: #f9f7f4;
+  --popover-foreground: #1a1a1a;
+  --primary: #7c9e8a;
+  --primary-foreground: #f9f7f4;
+  --primary-dark: #4a7c5f;
+  --secondary: #e8e4df;
+  --secondary-foreground: #1a1a1a;
+  --destructive: oklch(57.7% .245 27.325);
+  --input: #d8d4cf;
+  --radius: .75rem;
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b7280;
+  --surface: #e8e4df;
+  --accent-green: #7c9e8a;
+  --accent-green-dark: #4a7c5f;
 }
 
 /* Use a more-intuitive box-sizing model */
@@ -118,7 +118,7 @@ html {
 }
 
 .dark{
---background: #101828;
+  --background: #101828;
   --foreground: #e5e6eb;
   --muted: #1c1f2a;         
   --muted-foreground: #b4b8c5;         
@@ -138,7 +138,7 @@ html {
   --input: #2e3240;
   --text-primary: #e5e6eb;
   --text-secondary: #b4b8c5;        
-  --surface: #151821;
+  --surface: #1e2939;
   --accent-green: #6ee7b7;
   --accent-green-dark: #34d399;
   --color-white: #e5e6eb;
@@ -1053,7 +1053,7 @@ footer p {
     --input: #2e3240;
     --text-primary: #e5e6eb;
     --text-secondary: #b4b8c5;        
-    --surface: #151821;
+    --surface: #1e2939;
     --accent-green: #6ee7b7;
     --accent-green-dark: #34d399;
     --color-white: #e5e6eb;
