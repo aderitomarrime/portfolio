@@ -770,6 +770,14 @@ footer p {
   line-height: var(--text-base--line-height);
 }
 
+
+
+@media (min-width: 785px) {
+  header .sub-header .nav-mobile {
+    left: -100% !important;
+  }
+}
+
 @media (max-width: 784px) {
 
   .sub-header .hide-on-mobile {
