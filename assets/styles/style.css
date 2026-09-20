@@ -256,8 +256,14 @@ header nav button {
   cursor: pointer;
 }
 
+.dark-button,
+.light-button {
+  align-items: center;
+  justify-content: center;
+}
+
 header nav .dark-button {
-  display: block;
+    display: flex;
 }
 
 header nav .light-button {
@@ -269,11 +275,11 @@ header nav .light-button {
 } 
 
 .dark nav .light-button {
-  display: block;
+    display: flex;
 } 
 
 .light nav .dark-button {
-  display: block;
+    display: flex;
 } 
 
 .light nav .light-button {
@@ -1064,11 +1070,11 @@ footer p {
   } 
 
   .dark nav .light-button {
-    display: block;
+    display: flex;
   } 
 
   header nav .light-button {
-    display: block;
+    display: flex;
   }
 
   header nav .dark-button {
